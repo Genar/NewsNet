@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ArticleNewsPaper" representedClassName=".ArticleNewsPaper" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="URI" syncable="YES"/>
+        <attribute name="published" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="snippet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceUrl" optional="YES" attributeType="URI" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ownernewspaper" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SourceNewsPaper" inverseName="article" inverseEntity="SourceNewsPaper" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SourceNewsPaper" representedClassName=".SourceNewsPaper" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="article" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleNewsPaper" inverseName="ownernewspaper" inverseEntity="ArticleNewsPaper" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="ArticleNewsPaper" positionX="-54" positionY="-15" width="128" height="163"/>
+        <element name="SourceNewsPaper" positionX="-324" positionY="15" width="128" height="120"/>
+    </elements>
+</model>
