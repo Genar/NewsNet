@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  NewsNet
+
+  Created by Genaro Codina Reverter on 27/12/2017.
+  Copyright © 2017 Genaro Codina Reverter. All rights reserved.
+*/
+
+"filter_by_title" = "Filter by title";
+"newpapers" = "Newspapers";
+"articles" = "Articles";
+"news_from" = "News from %@";
