@@ -28,7 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Used for UI Testing to reset things like
+        // UserDefaults, Database tables, etc
+        if CommandLine.arguments.contains("--uitesting") {
+            
+            resetState()
+        }
+        
         return true
     }
 
@@ -56,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Core Data
     func saveContext() {
-
+        
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -68,4 +75,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
+ 
+private extension AppDelegate {
+    
+    // In our app we are not either using UserDefaults
+    // nor writing a UI test case where it is necessary
+    // to clear the database; however, in case
+    // of having to perform this kind of cleaning up this is the place
+    // this is the method where to put the corresponding code
+    func resetState() {
+        
+    }
+ }
 

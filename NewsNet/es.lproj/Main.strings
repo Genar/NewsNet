@@ -1,0 +1,27 @@
+
+/* Class = "UISearchBar"; placeholder = "Filter by title"; ObjectID = "2ak-Gz-3WV"; */
+"2ak-Gz-3WV.placeholder" = "Filtrar por título";
+
+/* Class = "UISearchBar"; 2ak-Gz-3WV.scopeButtonTitles[0] = "Title"; ObjectID = "2ak-Gz-3WV"; */
+"2ak-Gz-3WV.scopeButtonTitles[0]" = "Título";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "7PD-JB-L2D"; */
+"7PD-JB-L2D.text" = "Título";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "CFs-H5-Iqd"; */
+"CFs-H5-Iqd.text" = "Categoría";
+
+/* Class = "UILabel"; text = "Snippet"; ObjectID = "SOp-c3-Y46"; */
+"SOp-c3-Y46.text" = "Sinópsis";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "elZ-FP-O7v"; */
+"elZ-FP-O7v.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Overview"; ObjectID = "h5S-H3-BMD"; */
+"h5S-H3-BMD.text" = "Overview";
+
+/* Class = "UISearchBar"; placeholder = "Filter by title"; ObjectID = "n0f-R5-3KU"; */
+"n0f-R5-3KU.placeholder" = "Filtrar por título";
+
+/* Class = "UILabel"; text = "Published"; ObjectID = "u4m-Bi-HTs"; */
+"u4m-Bi-HTs.text" = "Publicado";
