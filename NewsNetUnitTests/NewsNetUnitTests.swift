@@ -144,5 +144,6 @@ class NewsNetUnitTests: XCTestCase {
         // then
         XCTAssertNil(responseError)
         XCTAssertEqual(statusCode, 200)
+        
     }
 }
