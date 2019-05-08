@@ -6,6 +6,7 @@
 //  Copyright © 2017 Genaro Codina Reverter. All rights reserved.
 //
 //
+//
 
 import XCTest
 @testable import NewsNet
