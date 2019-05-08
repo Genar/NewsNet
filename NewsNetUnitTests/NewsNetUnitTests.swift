@@ -102,7 +102,8 @@ class NewsNetUnitTests: XCTestCase {
     
     //
     // This method does not performs a test against the server
-    // in order to get the corresponding articles from "BBC news"
+    // in order to get the corresponding articles from "BBC news".
+    // It gets the information from a JSON file attached to the bundle,
     // and fullfits all the FIRST principles because it
     // does not depen on the server and consequently it is:
     // 1) Fast
