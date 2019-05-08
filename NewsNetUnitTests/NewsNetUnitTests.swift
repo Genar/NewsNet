@@ -101,7 +101,7 @@ class NewsNetUnitTests: XCTestCase {
     }
     
     //
-    // This method performs a test against the server
+    // This method does not performs a test against the server
     // in order to get the corresponding articles from "BBC news"
     // and fullfits all the FIRST principles because it
     // does not depen on the server and consequently it is:
