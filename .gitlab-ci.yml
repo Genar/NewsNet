@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -project NewsNet.xcodeproj -scheme "NewsNet" | xcpretty
+    - xcodebuild test -project NewsNet.xcodeproj -scheme "NewsNet" -destination 'platform=iOS Simulator,name=iPhone 7,OS=12.2' | xcpretty -s 
+  tags:
+    - ios_12-2
+    - xcode_10-2
+    - osx_10-14
