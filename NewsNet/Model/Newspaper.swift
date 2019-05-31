@@ -20,7 +20,7 @@ class Newspaper : NSObject, Codable {
     // can observe the articles information using KVO;
     // it is a requirement from KVO not use a name like
     // "description", because these names are already
-    // defined in NSObjet; consequently, in the process of parsing
+    // defined in NSObjet (like also "id"), consequently, in the process of parsing
     // those names then they are replaced by another names (keys)
     // (for example "description" is replaced by "overview").
     enum CodingKeys: String, CodingKey {
